@@ -1,0 +1,354 @@
+body{
+  font-family: 'Oswald', sans-serif;
+  margin: 10px
+}
+
+#contain{
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  color: grey;
+  font-size: 8pt;
+}
+
+header{
+  background-image: url("../img/img2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(11, 66, 211);
+  background-blend-mode: darken;
+  color: white;
+  padding: 0px 15px 30px 40px;
+  height: 20%;
+}
+
+header img{
+  width: 20%;
+  height: auto;
+  margin: -30px 0px 0px -45px;
+}
+
+header h1{
+  margin: 180px 0px -25px 0px;
+}
+
+header h2{
+  margin-bottom: -25px;
+}
+
+nav{
+  overflow: auto;
+  float: right;
+  padding: 10px 5px 1px 0;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  padding: 0 15px 0 15px;
+}
+
+nav h4{
+  margin: 0;
+
+}
+
+.hamburger{
+  float:right;
+  display:none;
+}
+.cross{
+  display:none;
+  float:right;
+  font-size:222%;
+  height:4%;
+  width:6%;
+
+}
+.borderlink{
+  border: 1px solid white;
+}
+
+.pic{
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  padding-bottom: : 14px;
+  margin-top: -12px;
+}
+
+.pic .aboutpic{
+  height: 100%;
+  margin-top: 20px;
+}
+
+.about{
+  width: 50%;
+  height: 20%;
+  padding: 70px 0px;
+  margin: 0 0 0 0px;
+}
+
+.about h2{
+  text-transform: uppercase;
+}
+
+.about h6 a{
+  color: black;
+}
+
+.flexbox{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.flexbox.first{
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.featured {
+  margin: 40px;
+  padding-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+
+}
+
+.featured-image{
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.featured_overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px;
+  color: white;
+  transform: translateY(100%);
+  transform: transform .35s ease-out;
+}
+
+.featured:hover .featured_overlay {
+  transform: translateY(0);
+}
+
+.featured_overlay_name {
+  margin: 0;
+  padding: 0 0;
+  transform: translateY(calc(-100%-10px)); /*+10 overlay padding*/
+  transition: transform .35s ease-out;
+}
+
+.featured_overlay_name {
+  transform: translateY(0);
+}
+
+.featured::before {
+  content: close-quote;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  transition: transform .35s ease-out;
+}
+
+.featured:hover::before {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.white div p{
+  color: white;
+}
+
+.last{
+  margin-top: -230px;
+}
+.facebook{
+  margin-left: 30px;
+  padding: 90px 0 0 0;
+}
+
+.eventstitle{
+margin:-48px 0 25px 79px ;
+}
+
+#new li {
+display: inline;
+margin-left: 30px;
+
+}
+
+#news ul {
+list-style-type: none;
+width: 100%;
+margin:0px -54px 0px -35px;
+
+}
+
+#news p {
+margin: -22px 0 0 81px;
+text-align: left;
+
+}
+
+#news div{
+margin-bottom: 25px;
+font-weight:bold;
+}
+
+footer{
+background: black;
+clear: both;
+color: white;
+padding:44px 0 15px 45px;
+margin-top: 75px;
+}
+
+footer h2{
+font-size: 10pt;
+margin: auto;
+padding: inherit;
+}
+
+footer p{
+color: white;
+}
+
+footer section ul{
+display: flex;
+flex-direction: row;
+list-style-type: none;
+margin: 0px 0 0 -40px;
+}
+
+footer section li{
+padding-right: 10px;
+display: list-item;
+}
+
+i{
+display: inline-flex;
+color: white;
+border: 1px solid white;
+border-radius: 100%;
+padding: 2px;
+
+}
+
+.footerright{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+margin: -30px 60px 0px 0px;
+}
+
+.footerright a{
+margin: 0 0 20px 0;
+padding: 0 10px 0 0;
+}
+
+/* media quieries*/
+
+@media only screen and (max-width: 620px) {
+
+body {
+display: block;
+}
+
+header nav, main, section{
+margin: 0 0 10px;
+width: 100%;
+}
+
+header nav li {
+margin: 0;
+background: #efefef;
+display: block;
+margin-bottom: 3px;
+}
+
+header nav a {
+display: none;
+padding: 10px;
+text-align: center;
+}
+.hamburger{
+  display:block;
+}
+.cross{
+ display:none;
+}
+.about{
+padding-top: -5px;
+margin: -360px 0 0 0;
+}
+.aboutpic{
+display: none;
+}
+.bottomnav {
+display: none;
+}
+.facebook{
+display: none;
+}
+
+}
+@media (min-width: 620px) and (max-width: 685px){
+
+  body {
+display: block;
+}
+
+header nav, main, section{
+margin: 0 0 10px;
+width: 100%;
+}
+
+header nav li {
+margin: 0;
+background: #efefef;
+display: block;
+margin-bottom: 3px;
+}
+
+header nav a {
+display: none;
+padding: 10px;
+text-align: center;
+}
+.hamburger{
+  display:block;
+}
+.cross{
+ display:none;
+}
+.about{
+padding-top: -5px;
+margin: -75px 0 0 0;
+}
+.aboutpic{
+display: none;
+}
+.bottomnav {
+display: none;
+}
+.facebook{
+display: none;
+}
+
+}
